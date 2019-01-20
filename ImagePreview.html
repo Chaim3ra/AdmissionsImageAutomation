@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+    <img style="position: absolute;top: 15%; left: 50%;  height: 300px; width:500px;" src="{{ user_image }}" alt="User Image">
+    <form style="position: absolute;top: 50%; left: 50%;" action = "http://localhost:5000/upload" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+
+
+    <img style="position: absolute;top: 60%; left: 50%;  height: 300px; width:500px;" src="{{ user_image2 }}" alt="User Image">
+</body>
+</html>
