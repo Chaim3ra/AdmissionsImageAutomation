@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<!--Author : Chaitanya Agarwal
+	created on : 22/01/2019-->
 <html>
 <head>
-    <title>Upload Image</title>
+    <title>Image Automation API</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <img style="position: absolute;top: 15%; left: 50%;  height: 300px; width:500px;" src="{{ user_image }}" alt="User Image">
+<body style="background-color: black;">
+    <img style="position: absolute;top: 15%; left: 50%;  height: 275px; width:200px;" src="{{ user_image }}" alt="User Image">
     <form style="position: absolute;top: 50%; left: 50%;" action = "http://localhost:5000/upload" method = "POST" 
          enctype = "multipart/form-data">
          <input type = "file" name = "file" />
@@ -12,6 +15,6 @@
       </form>
 
 
-    <img style="position: absolute;top: 60%; left: 50%;  height: 300px; width:500px;" src="{{ user_image2 }}" alt="User Image">
+    <img style="position: absolute;top: 60%; left: 50%;  height: 275; width:200;" src="{{ user_image2 }}" alt="User Image">
 </body>
 </html>
